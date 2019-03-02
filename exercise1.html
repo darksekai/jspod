@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+</head>
+<body>
+
+
+<input type="text" >
+
+<p id="place"></p>
+
+<button type="button">Check for hello?</button>
+
+
+<script>
+$("button").click(()=>{
+  const text =$("input").val();
+
+
+  if(text == "hello"){
+      $("#place").html(`The text is ${text}<br>`);
+
+  }
+
+  else {
+      $("#place").html(`The text is not hello`);
+  }
+});
+</script>
+</body>
+</html>
